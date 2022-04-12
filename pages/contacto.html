@@ -5,58 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css"> <!--CSS-externo-->
-    <title>Formulario</title><!--formulario para que quien visite la página, pueda dejar comentarios y criticas-->
+    <title>Contacto-prueba</title>
 </head>
 <body>
-    <form id="form">
-        <div class="titulo">
-            <h1>Registro</h1>
+    <div class="general">
+    <form class="form">
+        <h2 class="form-title">Inicia sesión</h2>
+        <p class="form-paragraph">¿Aun no tienes una cuenta?<a href="#" class="form-link">Entra aqui</a></p>
+
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" id="name" class="form-input" placeholder=" ">
+                <label for="name" class="form-label">Nombre:</label>
+                <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="user" class="form-input" placeholder=" ">
+                <label for="user" class="form-label">Usuario:</label>
+                <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="password" class="form-input" placeholder=" ">
+                <label for="password" class="form-label">Contraseña:</label>
+                <span class="form-line"></span>
+            </div>
+            <input type="submit" class="form-submit" value="Entrar">
         </div>
-        <div class="form">
-            <div class="grupo">
-                <label for="nombre">Nombre</label>
-                <div class="input">
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-            </div>
-            <div class="grupo">
-                <label for="apellido">Apellido</label>
-                <div class="input">
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
-                </div>
-            </div>
-            <div class="grupo">
-                <label for="email">Email</label>
-                <div class="input">
-                    <input type="Email" id="email" placeholder="Ingrese su email" required>
-                </div>
-            </div>   
-            <div class="grupo">
-                <label for="clave">Contraseña</label>
-                <div class="input">
-                    <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required>
-                </div>
-            </div>
-            <div class="grupo">
-                <label for="multi">Comentario</label>
-                 <div class="input">
-                    <textarea name="multi" id="multi" cols="30" rows="5"></textarea>
-                </div>
-            </div>   
-            <div class="grupo">
-                <input type="submit" value="Enviar">
-                <input type="submit" value="¿Olvidaste la contrasña?">
-            </div>
-        </div>
-    </form>    
-    </body>
+    </div>
+    </form>
     <nav id="pie-de-pagina">
-         <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../pages/riego.html">¿Cuales son los diferentes tipos de riego?</a></li>
-        <li><a href="../pages/medio-ambiente.html">¿Por que es importante cuidar el medio ambiente?</a></li>
-        <li><a href="../pages/quienes-somos.html">¿Quienes Somos?</a></li>
-        <li><a href="../pages/redes.html">Nuestras Redes</a></li>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./pages/riego.html">¿Cuales son los diferentes tipos de riego?</a></li>
+            <li><a href="./pages/medio-ambiente.html">¿Por que es importante cuidar el medio ambiente?</a></li>
+            <li><a href="./pages/quienes-somos.html">¿Quienes Somos?</a></li>
+            <li><a href="./pages/redes.html">Nuestras Redes</a></li>
         </ul>
     </nav>
+</body>
 </html>
