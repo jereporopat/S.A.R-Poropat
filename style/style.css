@@ -1,13 +1,13 @@
 /*index*/
 #index-estilo{
-    justify-content:center;
-    color:white;
-    text-align: center;
+   height: 100%;
     background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
-    background-position:center;
-    padding: 10px;
-    width: cover;
-    height: 672px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
     background-blend-mode: soft-light;
     background-color: rgb(100,100,100)
 }
