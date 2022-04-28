@@ -1,0 +1,75 @@
+//map
+$color-blanco: white;
+//mixin
+@mixin parrafos {
+    text-decoration: solid;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    color: $color-blanco;
+    height: 2fr;
+}
+//map get
+$Estilos:(
+  centro: center,
+  fuente: 10px,
+);
+
+//redes
+#estilo-redes{
+  background: #283048;
+    background: -webkit-linear-gradient(to right, #859398, #283048);
+    background: linear-gradient(to right, #859398, #283048);
+    height: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: list-item;
+    padding: 10px 0;
+
+    
+    #titulo-redes{
+        text-align: center;
+        font-weight: 300;
+        color: antiquewhite;
+        text-decoration: underline;
+        }
+        #enlace-yt{
+            width: 560px;
+            height: 315px;
+        }
+        #enlace-spotify{
+            width: 300px;
+            height: 380px;
+        }        
+}
+
+//Index
+#index-estilo{
+background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: $color-blanco;
+  background-blend-mode: soft-light;
+  background-color: rgb(100, 100, 100);
+
+.parrafo-index{
+  @include parrafos()
+}
+}
+//quienes-somos
+
+#quienes-somos{
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
+  background: linear-gradient(to right, #283E51, #4B79A1);
+  height: cover;
+  align-items: map-get($Estilos, centro);
+  justify-content: map-get($Estilos, centro);
+  text-align: map-get($Estilos, centro);
+  display: list-item;
+  padding: map-get($Estilos, fuente);
+}
