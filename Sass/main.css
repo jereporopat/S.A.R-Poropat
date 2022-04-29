@@ -1,7 +1,11 @@
 #estilo-redes {
-  background: #283048;
+background: #283048;
   background: -webkit-gradient(linear, left top, right top, from(#859398), to(#283048));
   background: linear-gradient(to right, #859398, #283048);
+  background: #ffd89b;
+  background: -webkit-gradient(linear, left top, right top, from(#19547b), to(#ffd89b));
+  background: linear-gradient(to right, #19547b, #ffd89b);
+
   height: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -30,7 +34,6 @@
   width: 300px;
   height: 380px;
 }
-
 #index-estilo {
   background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
   background-repeat: no-repeat;

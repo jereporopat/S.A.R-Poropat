@@ -17,9 +17,9 @@ $Estilos:(
 
 //redes
 #estilo-redes{
-  background: #283048;
-    background: -webkit-linear-gradient(to right, #859398, #283048);
-    background: linear-gradient(to right, #859398, #283048);
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    background: linear-gradient(to right, #19547b, #ffd89b);
     height: cover;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,6 @@ $Estilos:(
             height: 380px;
         }        
 }
-
 //Index
 #index-estilo{
 background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
@@ -55,13 +54,12 @@ background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
   color: $color-blanco;
   background-blend-mode: soft-light;
   background-color: rgb(100, 100, 100);
-
+}
 .parrafo-index{
   @include parrafos()
 }
-}
-//quienes-somos
 
+//quienes-somos
 #quienes-somos{
   background: #4B79A1;
   background: -webkit-linear-gradient(to right, #283E51, #4B79A1);

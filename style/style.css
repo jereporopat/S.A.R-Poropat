@@ -1,221 +1,201 @@
-/*index
+/*index*/
 #index-estilo{
-   height: 100%;
-    background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    color: white;
-    background-blend-mode: soft-light;
-    background-color: rgb(100,100,100)
-}
-.parrafo-index{
-    text-decoration:solid;
-    display: flex;
-    padding: 20px;
-    text-align:center;
-    color: white;
-    height: 2fr;
-}
-*/
-/*riego*/
-.grid-layout{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 70% auto;
-}
-.caja{
-    border: 2px solid black;
-    background-color: lightgray;
-    line-height: 18px;
-    padding: 60px;
-    text-align:center;
-    margin: 5px;
-}
-.caja:nth-child(1){
-    padding: 5px;
-}
-.caja:nth-child(2){
-    background-image: url(../sistema-automatico-riego/img/reigoGravedad.jpg);
-    background-size: 346px 402px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.caja:nth-child(4){
-    background-image: url(../sistema-automatico-riego/img/riego-aspersion.jpg);
-}
-.caja:nth-child(6){
-    background-image: url(../sistema-automatico-riego/img/riego-localizado.jpg);
-    background-size: 420px 362px;
-    background-repeat: no-repeat;
-}
-.caja:nth-child(8){
-    background-image: url(../sistema-automatico-riego/img/riego-subterraneo.jpg);
-}
-/*medio-ambiente*/
-.medio-ambiente{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:local;
-    background-size: cover;
-    position: relative;
-    align-items: center;
-    background-image: url(../sistema-automatico-riego/img/background-medio-ambiente.jpg);
-    background-color: rgb(100,100,100);
-    background-blend-mode: soft-light;
-}
-.parrafo-ambiente{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    text-align: center;
-    padding: 10px 20px;
-}
-/*redes
-#estilo-redes{
-    background: #283048;
-    background: -webkit-linear-gradient(to right, #859398, #283048);
-    background: linear-gradient(to right, #859398, #283048);
-    height: cover;
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-    display:list-item;
-    padding: 10px 0;
-}         
-.titulo-redes{
-    text-decoration:underline;
-    text-align: center;
-    font-weight: 300;
-    color: antiquewhite;
-}
-/*quienes-somos
-#quienes-somos{
-    background: #4B79A1;
-    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
-    background: linear-gradient(to right, #283E51, #4B79A1);
-    height: cover;
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-    display:list-item;
-    padding: 10px 0;
-}
-*/
-/*pie-de-pagina*/
-#pie-de-pagina ul{
-    background-color: antiquewhite;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    color: black;
-    text-align: right;
-}
-#pie-de-pagina ul li{
-        display: inline-block;
-}
-#pie-de-pagina ul li::after{
-    content:"/";
-}
-#pie-de-pagina ul li:last-child::after{
-    content:"";
-}
-#pie-de-pagina ul li a{
-display: inline-block;
-padding: 0 1em;
-color:black;
-}
-#pie-de-pagina ul li a:hover{
-color: blue;
-}
-/*contacto*/
-@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Permanent+Marker&family=Source+Sans+Pro:ital,wght@0,700;1,200;1,700&display=swap');
-
-.general{
-background: #c2e59c;
-background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
-background: linear-gradient(to right, #64b3f4, #c2e59c);
-font-family: 'Anek Odia', sans-serif;
-display:flex;
-min-height: 100vh;
-}
-.form{
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
-}
-.form-title{
-    font-size: 2rem;
-    margin-bottom: .5em;
-    }
-.form-paragraph{
-    font-weight: 300;
-}
-.form-link{
-    font-weight: 400;
-    color: black;
-}
-.form-container{
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
-}
-.form-group{
-    position: relative;
-    --color: #5757577e;
-}
-.form-input{
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding : .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-    }
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: blue;
-}
-.form-label{
-    color:var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-}
-.form-submit{
-    background-color: blue;
-    color: white;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5em;
-}
-.form-line{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: blue;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-@media (max-width:425px){
-    font-size: 1.8rem;
-}
+    height: 100%;
+     background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     text-align: center;
+     color: white;
+     background-blend-mode: soft-light;
+     background-color: rgb(100,100,100)
+ }
+ .parrafo-index{
+     text-decoration:solid;
+     display: flex;
+     padding: 20px;
+     text-align:center;
+     color: white;
+     height: 2fr;
+ }
+ /*riego*/
+ .grid-layout{
+     width: 90%;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: 70% auto;
+ }
+ .caja{
+     border: 2px solid black;
+     background-color: lightgray;
+     line-height: 18px;
+     padding: 60px;
+     text-align:center;
+     margin: 5px;
+ }
+ .caja:nth-child(1){
+     padding: 5px;
+ }
+ .caja:nth-child(2){
+     background-image: url(../sistema-automatico-riego/img/reigoGravedad.jpg);
+     background-size: 346px 402px;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ .caja:nth-child(4){
+     background-image: url(../sistema-automatico-riego/img/riego-aspersion.jpg);
+ }
+ .caja:nth-child(6){
+     background-image: url(../sistema-automatico-riego/img/riego-localizado.jpg);
+     background-size: 420px 362px;
+     background-repeat: no-repeat;
+ }
+ .caja:nth-child(8){
+     background-image: url(../sistema-automatico-riego/img/riego-subterraneo.jpg);
+ }
+ /*medio-ambiente*/
+ .medio-ambiente{
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment:local;
+     background-size: cover;
+     position: relative;
+     align-items: center;
+     background-image: url(../sistema-automatico-riego/img/background-medio-ambiente.jpg);
+     background-color: rgb(100,100,100);
+     background-blend-mode: soft-light;
+ }
+ .parrafo-ambiente{
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     color:white;
+     text-align: center;
+     padding: 10px 20px;
+ }
+ /*quienes-somos*/
+ #quienes-somos{
+     background: #4B79A1;
+     background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
+     background: linear-gradient(to right, #283E51, #4B79A1);
+     height: cover;
+     align-items: center;
+     justify-content:center;
+     text-align: center;
+     display:list-item;
+     padding: 10px 0;
+ }
+ /*pie-de-pagina*/
+ #pie-de-pagina ul{
+     background-color: antiquewhite;
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+     color: black;
+     text-align: right;
+ }
+ #pie-de-pagina ul li{
+         display: inline-block;
+ }
+ #pie-de-pagina ul li::after{
+     content:"/";
+ }
+ #pie-de-pagina ul li:last-child::after{
+     content:"";
+ }
+ #pie-de-pagina ul li a{
+ display: inline-block;
+ padding: 0 1em;
+ color:black;
+ }
+ #pie-de-pagina ul li a:hover{
+ color: blue;
+ }
+ /*contacto*/
+ @import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Permanent+Marker&family=Source+Sans+Pro:ital,wght@0,700;1,200;1,700&display=swap');
+ 
+ .general{
+ background: #c2e59c;
+ background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+ background: linear-gradient(to right, #64b3f4, #c2e59c);
+ font-family: 'Anek Odia', sans-serif;
+ display:flex;
+ min-height: 100vh;
+ }
+ .form{
+     background-color: white;
+     margin: auto;
+     width: 90%;
+     max-width: 400px;
+     padding: 4.5em 3em;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+     text-align: center;
+ }
+ .form-title{
+     font-size: 2rem;
+     margin-bottom: .5em;
+     }
+ .form-paragraph{
+     font-weight: 300;
+ }
+ .form-link{
+     font-weight: 400;
+     color: black;
+ }
+ .form-container{
+     margin-top: 3em;
+     display: grid;
+     gap: 2.5em;
+ }
+ .form-group{
+     position: relative;
+     --color: #5757577e;
+ }
+ .form-input{
+     width: 100%;
+     background: none;
+     color: #706c6c;
+     font-size: 1rem;
+     padding : .6em .3em;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid var(--color);
+     }
+ .form-input:focus + .form-label,
+ .form-input:not(:placeholder-shown) + .form-label{
+     transform: translateY(-12px) scale(.7);
+     transform-origin: left top;
+     color: blue;
+ }
+ .form-label{
+     color:var(--color);
+     cursor: pointer;
+     position: absolute;
+     top: 0;
+     left: 5px;
+     transform: translateY(10px);
+     transition: transform .5s, color .3s;
+ }
+ .form-submit{
+     background-color: blue;
+     color: white;
+     font-weight: 300;
+     font-size: 1rem;
+     padding: .8em 0;
+     border: none;
+     border-radius: .5em;
+ }
+ .form-line{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background-color: blue;
+     transform: scale(0);
+     transform: left bottom;
+     transition: transform .4s;
+ }
+ @media (max-width:425px){
+     font-size: 1.8rem;
+ }
