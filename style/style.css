@@ -3,7 +3,6 @@
     background-size: cover;
     background-attachment: local;
     background-image: url(../sistema-automatico-riego/img/plantas-nocturnas.jpg);
-    height: 672px;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -20,8 +19,8 @@
     color: white;
     height: 2fr;
 }
-@media (max-width:425px){
-    font-size: 12px;
+@media screen and (max-width:425px){
+    font-size:12px;
 }
 /*medio-ambiente*/
 .medio-ambiente{
