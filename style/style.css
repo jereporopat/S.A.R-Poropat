@@ -21,14 +21,13 @@
     height: 2fr;
 }
 @media (max-width:425px){
-    font-size: 1.8rem;
+    font-size: 12px;
 }
 /*medio-ambiente*/
 .medio-ambiente{
     background-size: cover;
     background-attachment:local;
     background-image: url(../sistema-automatico-riego/img/background-medio-ambiente.jpg);
-    height: 600px;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -44,8 +43,8 @@
     color:white;
     height: 2fr;
 }
-@media (max-width:425px){
-    font-size: 1.8rem;
+@media (max-width:540px){
+    font-size: 12px;
 }
 /*contacto*/
 @import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Permanent+Marker&family=Source+Sans+Pro:ital,wght@0,700;1,200;1,700&display=swap');
